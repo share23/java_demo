@@ -35,11 +35,13 @@ public class JavaException {
             Date d = sdf.parse("201222");
             System.out.println(d);
         }
+
         /*
         catch(FileNotFoundException e){
             System.out.println("d:/QQ.exe不存在");
             e.printStackTrace();
         }*/
+
         catch(Exception e){
             if (e instanceof FileNotFoundException)
                 System.out.println("d:/QQ.exe不存在");
